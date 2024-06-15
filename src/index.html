@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for character set and viewport -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Page title -->
+  <title>Audio Player</title>
+
+  <!-- External stylesheet for Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container py-4 px-3 mx-auto">
+    <div class="row">
+
+      <!-- Audio player section -->
+      <audio controls id="audio">
+        <source src="./audio/Toni der Assi Mein Para (feat. Celo&Abdi) in Rap.mp3" type="audio/ogg">
+        <source src="./audio/Toni der Assi Mein Para (feat. Celo&Abdi) in Rap.mp3" type="audio/mpeg">
+      </audio>
+
+      <!-- Controls and metadata section -->
+      <div class="col-md-6 mx-auto my-5 p-3" id="audio-parent">
+        <div id="audio-title"></div>
+
+        <!-- Button group for play, pause, and stop buttons -->
+        <div class="btn-group">
+          <button class="btn btn-sm" id="play">
+            <i class="fa-solid fa-play"></i> <!-- Play icon -->
+          </button>
+
+          <button class="btn btn-sm" id="pause">
+            <i class="fa-solid fa-pause"></i> <!-- Pause icon -->
+          </button>
+
+          <button class="btn btn-sm" id="stop">
+            <i class="fa-solid fa-stop"></i> <!-- Stop icon -->
+          </button>
+        </div>
+
+        <!-- Volume control section -->
+        <div class="volume">
+          <i class="fa-solid fa-volume-high"></i> <!-- Volume icon -->
+          <input type="range" id="volume" min="0" max="1" step="0.1"> <!-- Volume slider -->
+        </div>
+
+        <!-- Metadata display section -->
+        <div id="metadata">
+          <p>Title: <span id="title"></span></p> <!-- Title of the audio -->
+          <p>Artist: <span id="artist"></span></p> <!-- Artist of the audio -->
+          <p>Album: <span id="album"></span></p> <!-- Album of the audio -->
+          <p>Year: <span id="year"></span></p> <!-- Year of the audio -->
+        </div>
+
+        <!-- Seeker control section -->
+        <div id="controls">
+          <input type="range" name="" id="seeker" min="0" value="0"> <!-- Seeker/slider for track position -->
+          <p id="time-details"></p> <!-- Time details display -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript file to handle audio player functionality -->
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

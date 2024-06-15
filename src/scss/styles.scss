@@ -1,0 +1,151 @@
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+// Styling for the audio element
+#audio {
+    display: none; // Hide the audio element by default
+}
+
+// Styling for the parent container of the audio player
+#audio-parent {
+    width: 50%; // Set width to 50% of its container
+    position: relative; // Relative positioning for child elements
+    border: 2px solid #e6e6ff51; // Light blue border with transparency
+    box-shadow: 0 0 10px #0000ff31; // Light blue box shadow with transparency
+    border-radius: 12px; // Rounded corners
+    min-height: 300px; // Minimum height for the container
+
+    // Styling for metadata section
+    #metadata {
+        width: 90%; // Width of 90% relative to parent
+        p {
+            display: flex; // Flex display for paragraph elements
+            justify-content: space-between; // Space between elements
+            margin: 2% auto; // Margin settings
+            align-content: center; // Center align content
+            align-items: center; // Center align items
+        }
+    }
+
+    // Styling for audio title section
+    #audio-title {
+        position: absolute; // Absolute positioning
+        top: -17px; // Offset from top
+        left: 61px; // Offset from left
+        border: 2px solid #e6e6ff51; // Light blue border with transparency
+        background-color: #fff; // White background
+        box-sizing: border-box; // Include padding and border in total width/height
+        padding: 4px 30px; // Padding settings
+        border-radius: 4px; // Rounded corners
+        box-shadow: inset 0 0 5px #0000ff31; // Light blue inset shadow
+
+        &::after {
+            content: "Audio Player"; // Text content
+            color: #000000; // Black text color
+        }
+    }
+
+    // Styling for volume control section
+    .volume {
+        position: absolute; // Absolute positioning
+        bottom: 60%; // Offset from bottom
+        right: -89px; // Offset from right
+        transform: rotate(-90deg); // Rotate 90 degrees
+        display: flex; // Flex display
+        justify-content: center; // Center justify content
+        align-content: center; // Center align content
+        align-items: center; // Center align items
+
+        #volume {
+            cursor: grab; // Grab cursor on hover
+            width: 60%; // Width of volume slider
+            margin: 0 9px; // Margin settings
+
+            // Styling for volume slider
+            &::-webkit-slider-runnable-track {
+                background-color: #000000; // Black background color
+                height: 3px; // Height of the track
+                border-radius: 22px; // Rounded corners
+            }
+
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none; // Override default appearance
+                appearance: none; // Hide default appearance
+                border: 1px solid #000000; // Black border
+                margin-top: -12px; // Offset from top
+                background-color: #000000; // Black background color
+                height: 20px; // Height of the thumb
+                width: 20px; // Width of the thumb
+                border-radius: 50%; // Rounded corners
+            }
+
+            &::-moz-range-track {
+                background-color: #000000; // Black background color
+                height: 3px; // Height of the track
+                border-radius: 22px; // Rounded corners
+            }
+
+            &::-moz-range-thumb {
+                -webkit-appearance: none; // Override default appearance
+                appearance: none; // Hide default appearance
+                border: 1px solid #000000; // Black border
+                margin-top: -12px; // Offset from top
+                background-color: #000000; // Black background color
+                height: 20px; // Height of the thumb
+                width: 20px; // Width of the thumb
+                border-radius: 50%; // Rounded corners
+            }
+        }
+    }
+
+    // Styling for controls section
+    #controls {
+        position: absolute; // Absolute positioning
+        bottom: 0; // Offset from bottom
+        width: 90%; // Width of 90% relative to parent
+        margin: 20px auto; // Margin settings
+        right: 5%; // Offset from right
+
+        // Styling for range inputs (seeker)
+        input[type="range"] {
+            -webkit-appearance: none; // Override default appearance
+            background: transparent; // Transparent background
+            cursor: grab; // Grab cursor on hover
+            width: 100%; // Full width
+
+            &::-webkit-slider-runnable-track {
+                background-color: #000000; // Black background color
+                height: 3px; // Height of the track
+                border-radius: 22px; // Rounded corners
+            }
+
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none; // Override default appearance
+                appearance: none; // Hide default appearance
+                border: 1px solid #000000; // Black border
+                margin-top: -12px; // Offset from top
+                background-color: #000000; // Black background color
+                height: 20px; // Height of the thumb
+                width: 20px; // Width of the thumb
+                border-radius: 50%; // Rounded corners
+            }
+
+            &::-moz-range-track {
+                background-color: #000000; // Black background color
+                height: 3px; // Height of the track
+                border-radius: 22px; // Rounded corners
+            }
+
+            &::-moz-range-thumb {
+                -webkit-appearance: none; // Override default appearance
+                appearance: none; // Hide default appearance
+                border: 1px solid #000000; // Black border
+                margin-top: -12px; // Offset from top
+                background-color: #000000; // Black background color
+                height: 20px; // Height of the thumb
+                width: 20px; // Width of the thumb
+                border-radius: 50%; // Rounded corners
+            }
+        }
+    }
+}
