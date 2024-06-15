@@ -28,14 +28,17 @@ To get started with the project, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/MALB1993/audio-player.git
-   cd audio-player
+      git clone https://github.com/MALB1993/audio-player.git
+   ```
+
+   ```bash
+      cd audio-player
    ```
 
 2. **Install dependencies:**
 
    ```bash
-   npm install
+      npm install
    ```
 
 3. **Add an audio file:**
@@ -49,7 +52,7 @@ To run the project locally:
 1. **Start the development server:**
 
    ```bash
-   npm start
+      npm start
    ```
 
 2. **Open your browser:**
