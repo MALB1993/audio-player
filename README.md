@@ -1,67 +1,40 @@
-# Audio Player
+# Music Player
 
-A simple audio player built using JavaScript, Bootstrap, FontAwesome, and Vite. The player includes basic controls such as play, pause, and stop.
+A simple music player built with JavaScript and styled with Bootstrap. This player allows you to play, pause, and stop audio tracks, adjust volume, and track playback progress.
 
-## Overview
+## Features
 
-This project provides a minimalistic audio player interface leveraging the following technologies:
+- Play, pause, and stop controls.
+- Volume adjustment using a slider.
+- Seeker bar to track playback progress.
+- Displays metadata such as title, artist, album, and year.
 
-- **JavaScript**: Core functionality for handling audio playback and controls.
-- **Bootstrap**: Ensures responsive design and styling for a user-friendly interface.
-- **FontAwesome**: Utilized for embedding stylish and scalable icons within the player.
-- **Vite**: Offers a fast and optimized development environment for modern JavaScript applications.
+## Technologies Used
 
-## Installation
-
-Follow these steps to get started with the project:
-
-1. **Clone the repository:**
-
-git clone https://github.com/MALB1993/audio-player.git
-
-cd audio-player
-
-
-2. **Install dependencies:**
-
-
-npm install
-
-
-3. **Add an audio file:**
-
-Place your desired audio file (`audio.mp3`) in the `src/assets` directory.
+- **JavaScript**: Core functionality for audio playback and control.
+- **Bootstrap**: Provides responsive design and styling elements.
+- **FontAwesome**: Includes icons for player controls.
 
 ## Usage
 
-To run the project locally:
+Clone the repository and install dependencies to get started:
 
-1. **Start the development server:**
+```bash
+   git clone https://github.com/yourusername/music-player.git
+   cd music-player
+   npm install
+```
 
+To run the player locally:
+
+```bash
 npm start
+```
 
+Open your browser and navigate to http://localhost:3000 to interact with the music player.
+Contributing
 
-2. **Open your browser:**
+Contributions are welcome! Fork the repository, create a branch, commit your changes, and open a pull request.
+License
 
-Navigate to `http://localhost:3000` to view and interact with the audio player.
-
-## Contributing
-
-Contributions are welcome! Follow these steps to contribute:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Open a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-**GitHub**: [MALB1993](https://github.com/MALB1993)  
-**Email**: [malb1993@outlook.com](mailto:malb1993@outlook.com)
-
-این متن کامل و بدون هیچ گونه نوشته‌های bash اضافی است که می‌توانید برای README.md پروژه‌تان استفاده کنید.
+This project is licensed under the MIT License. See the LICENSE file for details.
