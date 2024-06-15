@@ -25,7 +25,7 @@ The audio player provides a minimal interface for playing audio files. It levera
 
 To get started with the project, follow these steps:
 
-1. **Clone the repository:**
+**Clone the repository:**
 
    ```bash
       git clone https://github.com/MALB1993/audio-player.git
@@ -35,13 +35,13 @@ To get started with the project, follow these steps:
       cd audio-player
    ```
 
-2. **Install dependencies:**
+**Install dependencies:**
 
    ```bash
       npm install
    ```
 
-3. **Add an audio file:**
+**Add an audio file:**
 
    Place an audio file (`audio.mp3`) in the `src/assets` directory.
 
@@ -49,13 +49,13 @@ To get started with the project, follow these steps:
 
 To run the project locally:
 
-1. **Start the development server:**
+**Start the development server:**
 
    ```bash
       npm start
    ```
 
-2. **Open your browser:**
+**Open your browser:**
 
    Navigate to `http://localhost:3000` to view and use the audio player.
 
